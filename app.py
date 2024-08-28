@@ -3,6 +3,8 @@ import os
 from beyondllm import source, llms, retrieve, generator
 from beyondllm.embeddings import FineTuneEmbeddings
 import shutil
+import nltk
+nltk.download('punkt')
 
 st.title('Talk With Your CV!')
 st.markdown("""
