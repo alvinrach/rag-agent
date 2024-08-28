@@ -1,0 +1,6 @@
+venv
+the_cv.pdf
+fintune
+.ipynb_checkpoints
+train_dataset.json
+val_dataset.json
