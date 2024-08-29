@@ -1,4 +1,4 @@
-beyondllm
+beyondllm==0.2.2
 llama-index-finetuning
 llama-index-embeddings-huggingface
 streamlit
