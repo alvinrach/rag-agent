@@ -1,4 +1,4 @@
-beyondllm==0.2.2
-llama-index-embeddings-huggingface==0.3.1
 llama-index-finetuning==0.2.0
+llama-index-embeddings-huggingface==0.3.1
+beyondllm==0.2.2
 streamlit==1.38.0
