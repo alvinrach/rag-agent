@@ -55,13 +55,13 @@ if os.path.exists('the_cv.pdf'):
             pipeline = generator.Generate(question=the_question ,retriever=retriever,llm=llm)
             st.markdown(pipeline.call())
 
-            if st.button("Reupload and Retrain CV"):
-                if os.path.exists(path):
-                    os.remove(path)
-                if os.path.exists('train_dataset.json'):
-                    os.remove('train_dataset.json')
-                if os.path.exists('val_dataset.json'):
-                    os.remove('val_dataset.json')
-                if os.path.exists("fintune"):
-                    shutil.rmtree("fintune")
-                st.rerun()
+        if st.button("Reupload and Retrain CV"):
+            if os.path.exists(path):
+                os.remove(path)
+            if os.path.exists('train_dataset.json'):
+                os.remove('train_dataset.json')
+            if os.path.exists('val_dataset.json'):
+                os.remove('val_dataset.json')
+            if os.path.exists("fintune"):
+                shutil.rmtree("fintune")
+            st.rerun()
