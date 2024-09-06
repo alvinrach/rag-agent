@@ -1,4 +1,5 @@
 beyondllm
 llama-index-embeddings-fastembed
+llama-index-finetuning
 llama-index-embeddings-huggingface
 streamlit
