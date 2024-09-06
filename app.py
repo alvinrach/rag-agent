@@ -31,7 +31,10 @@ if not os.path.exists('the_cv.pdf'):
             f.write(cv.getbuffer())
 
 if os.path.exists('the_cv.pdf'):
-    os.environ['GOOGLE_API_KEY'] = st.text_input('Your Gemini Key', key="token", type="password")
+    if os.getenv('GOOGLE_API_KEY'):
+        os.environ['GOOGLE_API_KEY'] = os.getenv('GOOGLE_API_KEY')
+    else:
+        os.environ['GOOGLE_API_KEY'] = st.text_input('Your Gemini Key', key="token", type="password")
 
     if os.environ['GOOGLE_API_KEY']:
         path = "the_cv.pdf"
